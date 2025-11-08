@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Nowa wiadomość - Pensjonaty.Online</title>
+    <style>
+        body { font-family: Arial, sans-serif; color: #333; }
+        h1 { color: #0d47a1; }
+        .details { margin: 20px 0; }
+        .details dt { font-weight: bold; margin-top: 10px; }
+        .details dd { margin: 0 0 10px 0; }
+        .message { margin-top: 20px; white-space: pre-line; }
+    </style>
+</head>
+<body>
+    <h1>Nowa wiadomość od odwiedzającego</h1>
+    <p>Otrzymano nowe zgłoszenie z formularza kontaktowego Pensjonaty.Online.</p>
+    <dl class="details">
+        <dt>Imię i nazwisko</dt>
+        <dd>{{ name }}</dd>
+        <dt>Email</dt>
+        <dd>{{ email }}</dd>
+        <dt>Telefon</dt>
+        <dd>{{ phone }}</dd>
+    </dl>
+    <div class="message">
+        <h2>Treść wiadomości</h2>
+        <p>{{ message }}</p>
+    </div>
+    <p><a href="{{ unsubscribeUrl }}">Zrezygnuj z powiadomień</a></p>
+</body>
+</html>

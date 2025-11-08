@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt - Pensjonaty.Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-b7jc0bFeSuXBJtn+rF+hbNl8I5bBIH/czsRUYw35vj0IadB1iKsFcEYJIya4A1NVuMcZ4rIO4S4XdC18PzlZBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3Yxl0zS+4w1zY4EUX0e2bNCD06CF7p3spwwK0MxDPD0YrCS9thw56GVn0Pyye/er2q1YgFf5SX2YJ6E0zFkxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+<section class="contact-two">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="contact-two_image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="contact-two_image-outer">
+                    <div class="contact-two_image wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <img src="media/various/contact_b.jpg" alt="Kontakt - Pensjonaty.Online" />
+                    </div>
+                    <div class="contact-two_phone">
+                        <div class="contact-two_phone-inner">
+                            <i class="flaticon-phone-call"></i>
+                            Nasz telefon dla Was<br>
+                            <a href="tel:+48696225597">+48 696 225 597</a>
+                        </div>
+                    </div>
+                    <div class="contact-two_image-content">
+                        <i class="flaticon-home"></i>
+                        <h5>Pensjonaty.Online</h5>
+                        <div class="text">Znajdź swój moment spokoju</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-two_content-column col-lg-6 col-md-12 col-sm-12">
+                <div class="contact-two_content-outer">
+                    <div class="sec-title">
+                        <div class="sec-title_title">Kontakt</div>
+                        <h2 class="sec-title_heading" style="margin-bottom: 50px;">Współpraca? Praca? Reklama? <b>Pomysły</b>?</h2>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm" method="post" action="send_contact.php" novalidate>
+                            <div class="form-group" data-field="name">
+                                <i class="flaticon-user" aria-hidden="true"></i>
+                                <input type="text" name="name" placeholder="Imię i nazwisko" autocomplete="name" required>
+                                <small class="error-message" aria-live="polite"></small>
+                            </div>
+                            <div class="form-group" data-field="email">
+                                <i class="flaticon-mail" aria-hidden="true"></i>
+                                <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+                                <small class="error-message" aria-live="polite"></small>
+                            </div>
+                            <div class="form-group" data-field="phone">
+                                <i class="flaticon-telephone" aria-hidden="true"></i>
+                                <input type="tel" name="phone" placeholder="Telefon" autocomplete="tel" required>
+                                <small class="error-message" aria-live="polite"></small>
+                            </div>
+                            <div class="form-group" data-field="message">
+                                <textarea name="message" placeholder="Oto miejsce do pisania..." rows="6" required></textarea>
+                                <small class="error-message" aria-live="polite"></small>
+                            </div>
+                            <div class="form-group">
+                                <button class="submit-btn" type="submit">Wyślij</button>
+                            </div>
+                        </form>
+                        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="../assets/js/contact.js"></script>
+</body>
+</html>
